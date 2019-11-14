@@ -7,21 +7,35 @@ import api from '../../services/api';
 
 export default function Feed() {
     const [feed, setFeed] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [page, setPage] = useState(1);
+
+    async function loadPage(pageNumber = page) {
+        if (total && pageNumber > total) return;
+
+        const response = await api.get(
+            `/feed?_expand=author&_limit=5&_page=${pageNumber}`,
+        );
+
+        // const totalItems = response.headers.get('X-Total-Count');
+        const totalItems = response.headers['x-total-count'];
+        setTotal(Math.floor(totalItems / 5));
+
+        const { data } = response;
+
+        setFeed([...feed, ...data]);
+        setPage(pageNumber + 1);
+    }
 
     useEffect(() => {
-        async function fetchMyApi() {
-            await api
-                .get('/feed?_expand=author&_limit=5&_page=1')
-                .then(resp => {
-                    setFeed(resp.data);
-                });
-        }
-        fetchMyApi();
+        loadPage();
     }, []);
 
     return (
         <View>
             <FlatList
+                onEndReached={() => loadPage()}
+                onEndReachedThreshold={0.1}
                 data={feed}
                 keyExtractor={post => String(post.id)}
                 renderItem={({ item }) => (
