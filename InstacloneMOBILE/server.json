@@ -5,15 +5,15 @@
         "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/1.jpeg",
         "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/1.jpeg",
         "aspectRatio": 0.834,
-        "description": "Working hard at Rocketseat!",
+        "description": "Studying a lot, javascript and your stack of technologies!",
         "authorId": 1
       },
       {
         "id": 2,
-        "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/2.jpeg",
+        "image": "https://instagram.fbhz2-1.fna.fbcdn.net/vp/1e486b61055150af40ef3c577eacf6a1/5E5D6101/t51.2885-15/e35/73271140_199517341076960_3594629584144836023_n.jpg?_nc_ht=instagram.fbhz2-1.fna.fbcdn.net&_nc_cat=108%22",
         "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/2.jpeg",
         "aspectRatio": 0.834,
-        "description": "Code, code and more code!",
+        "description": "#look #lookinho #foto #feed #fotografia #gpmundo #gpbrasil #loja #lojavirtual #lookdodia #noite #black #model #arraialdocabo #araruama #ensaio #tumblr #tumblrgirl #tumblrpost #regiaodoslagos #rj",
         "authorId": 2
       },
       {
@@ -164,13 +164,13 @@
     "authors": [
       {
         "id": 1,
-        "name": "dieegosf",
-        "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
+        "name": "higorhms",
+        "avatar": "https://avatars3.githubusercontent.com/u/44821959?s=460&v=4"
       },
       {
         "id": 2,
-        "name": "cleitonsouza",
-        "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
+        "name": "biia_oliv3r",
+        "avatar": "https://instagram.fbhz2-1.fna.fbcdn.net/vp/36e6ab12d034f2ffc48150726f5dd010/5E895806/t51.2885-15/e35/74609549_203827680635088_5402519497527740103_n.jpg?_nc_ht=instagram.fbhz2-1.fna.fbcdn.net&_nc_cat=100"
       },
       {
         "id": 3,

@@ -28,14 +28,14 @@ export default function Feed() {
                     <Post>
                         <Header>
                             <Avatar source={{ uri: item.author.avatar }} />
-                            <Name>${item.author.name}</Name>
+                            <Name>{item.author.name}</Name>
                         </Header>
                         <PostImage
                             ratio={item.aspectRatio}
                             source={{ uri: item.image }}
                         />
                         <Description>
-                            <Name>${item.author.name}</Name>${item.description}
+                            <Name>{item.author.name}:</Name> {item.description}
                         </Description>
                     </Post>
                 )}

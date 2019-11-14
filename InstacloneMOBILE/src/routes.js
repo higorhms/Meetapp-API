@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image} from 'react-native';
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import { Image } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Logo from './assets/instagram.png';
 import Feed from './pages/Feed';
