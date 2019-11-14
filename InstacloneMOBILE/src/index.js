@@ -1,8 +1,18 @@
 import React from 'react';
-import {View} from 'react-native';
+import {StatusBar} from 'react-native';
+import Routes from './routes';
+import {colors} from './styles/global';
 
 // import { Container } from './styles';
 
 export default function src() {
-    return <View />;
+    return (
+        <>
+            <Routes />
+            <StatusBar
+                backgroundColor={colors.headerColor}
+                barStyle="dark-content"
+            />
+        </>
+    );
 }
