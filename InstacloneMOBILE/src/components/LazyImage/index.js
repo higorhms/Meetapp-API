@@ -3,17 +3,18 @@ import { Animated } from 'react-native';
 
 import { Small, Original } from './styles';
 
-export default function LazyImage({ source, smallSource, ratio }) {
+export default function LazyImage({ source, smallSource, ratio, shouldLoad }) {
     const [loaded, setLoaded] = useState(false);
     const opacity = new Animated.Value(0);
     const OriginalAnimated = Animated.createAnimatedComponent(Original);
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoaded(true);
-        }, 1000);
-        setLoaded(false);
-    }, []);
+        if (shouldLoad) {
+            setTimeout(() => {
+                setLoaded(true);
+            }, 1000);
+        }
+    }, [shouldLoad]);
 
     function handleAnimated() {
         Animated.timing(opacity, {
@@ -24,7 +25,7 @@ export default function LazyImage({ source, smallSource, ratio }) {
     }
 
     return (
-        <Small source={smallSource} ratio={ratio} blurRadius={2}>
+        <Small source={smallSource} ratio={ratio} blurRadius={4}>
             {loaded && (
                 <OriginalAnimated
                     style={{ opacity }}
