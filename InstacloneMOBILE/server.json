@@ -3,7 +3,7 @@
         {
             "id": 1,
             "image": "https://www.inovex.de/blog/wp-content/uploads/2018/03/react-native.png",
-            "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/1.jpeg",
+            "small": "https://www.inovex.de/blog/wp-content/uploads/2018/03/react-native.png",
             "aspectRatio": 0.834,
             "description": "Studying a lot javascript and your stack of technologies!",
             "authorId": 1
@@ -11,7 +11,7 @@
         {
             "id": 2,
             "image": "https://instagram.fbhz2-1.fna.fbcdn.net/vp/1e486b61055150af40ef3c577eacf6a1/5E5D6101/t51.2885-15/e35/73271140_199517341076960_3594629584144836023_n.jpg?_nc_ht=instagram.fbhz2-1.fna.fbcdn.net&_nc_cat=108%22",
-            "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/2.jpeg",
+            "small": "https://instagram.fbhz2-1.fna.fbcdn.net/vp/1e486b61055150af40ef3c577eacf6a1/5E5D6101/t51.2885-15/e35/73271140_199517341076960_3594629584144836023_n.jpg?_nc_ht=instagram.fbhz2-1.fna.fbcdn.net&_nc_cat=108%22",
             "aspectRatio": 0.834,
             "description": "#look #lookinho #foto #feed #fotografia #gpmundo #gpbrasil #loja #lojavirtual #lookdodia #noite #black #model #arraialdocabo #araruama #ensaio #tumblr #tumblrgirl #tumblrpost #regiaodoslagos #rj",
             "authorId": 2
