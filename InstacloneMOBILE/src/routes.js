@@ -19,6 +19,7 @@ const Routes = createAppContainer(
                 },
             },
             headerLayoutPreset: 'center',
+            headerMode: 'float',
         },
     ),
 );
