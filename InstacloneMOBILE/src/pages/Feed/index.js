@@ -24,7 +24,7 @@ export default function Feed() {
 
         // const totalItems = response.headers.get('X-Total-Count');
         const totalItems = response.headers['x-total-count'];
-        setTotal(Math.floor(totalItems / 5));
+        setTotal(Math.ceil(totalItems / 5));
 
         const { data } = response;
 
@@ -52,15 +52,15 @@ export default function Feed() {
     return (
         <View>
             <FlatList
-                data={feed}
-                keyExtractor={post => String(post.id)}
-                onEndReached={() => loadPage()}
-                onEndReachedThreshold={0.1}
-                onRefresh={refreshList}
-                refreshing={refreshing}
-                onViewableItemsChanged={handleViewableChanged}
-                viewabilityConfig={{ viewAreaCoveragePercentThreshold: 20 }}
-                ListFooterComponent={loading && <Loading />}
+                data={feed} // dados que serão renderizados na lista
+                keyExtractor={post => String(post.id)} // key para diferenciar um item do outro
+                onEndReached={() => loadPage()} // função chamada quando o scroll chega ao fim da pagina
+                onEndReachedThreshold={0.1} // porcentagem do fim da pagina para disparar o onEndReached
+                onRefresh={refreshList} // função chamada quando o usuario puxa a lista pra cima
+                refreshing={refreshing} // boolean que determina o refreshing
+                onViewableItemsChanged={handleViewableChanged} // Called when the viewability of rows changes, as defined by the viewabilityConfig prop.
+                viewabilityConfig={{ viewAreaCoveragePercentThreshold: 20 }} // porcentagem visualizada para chamar o onViewableItemsChanged
+                ListFooterComponent={loading && <Loading />} // Componente que será renderizado no fim da lista
                 renderItem={({ item }) => (
                     <Post>
                         <Header>

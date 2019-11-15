@@ -5,8 +5,8 @@ import { Small, Original } from './styles';
 
 export default function LazyImage({ source, smallSource, ratio, shouldLoad }) {
     const [loaded, setLoaded] = useState(false);
-    const opacity = new Animated.Value(0);
-    const OriginalAnimated = Animated.createAnimatedComponent(Original);
+    const opacity = new Animated.Value(0); // variavel que guarda o tipo de animação
+    const OriginalAnimated = Animated.createAnimatedComponent(Original); // criando componente animado, com um componente ja existente
 
     useEffect(() => {
         if (shouldLoad) {
